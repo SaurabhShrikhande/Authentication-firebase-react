@@ -5,6 +5,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { Auth } from './auth';
 
 function App() {
  const router = createBrowserRouter([
@@ -12,18 +13,22 @@ function App() {
     path : "/",
     element : <LogIn/> ,
     children  :  [
-      {
-        path : "/SignIn",
-      element : <SignIn/>
-      }
+      
    ]
+  }
+   ,
+   {
+    path : "/SignIn",
+  element : <SignIn/>
   }
 
  ])
 
   return (
     <div>
-       < RouterProvider router= {router}/>
+       {/* < RouterProvider router = {router}/> */}
+
+       <Auth/>
     </div>
   );
 }

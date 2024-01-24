@@ -1,7 +1,7 @@
 import './App.css';
 export default function LogIn(){
     return(
-        <div className="App flex" style={{minHeight:"100vh", border:"4px solid black"}} >
+        <div className="App flex" style={{minHeight:"100vh"}} >
        <div  style={{border:"0px solid black", minHeight:"70vh", padding:"50px 20px", borderRadius:"10px" , boxShadow:"0px 0px 4px 2px gray"}}>
       <div style={{lineHeight:"100px"}}>
          <form >
@@ -12,7 +12,7 @@ export default function LogIn(){
       </div>
        <hr style={{width:"450px", marginTop:"70px"}}></hr>
        <div>
-      <h3>Have an account?</h3> 
+      <h3>Dont't Have an account?</h3> 
       <h2 style={{color:"#0095F6"}}>Sign In</h2>
       </div>
       </div>
