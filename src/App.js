@@ -1,6 +1,7 @@
 import './App.css';
 import LogIn from './LogIn';
 import SignIn from './SignIn';
+import Home from './Home';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -23,6 +24,10 @@ function App() {
   {
     path : "/SignIn",
   element : <SignIn/>
+  },
+  {
+    path : "/Home",
+  element : <Home/>
   }
 
  ])

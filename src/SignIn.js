@@ -30,7 +30,7 @@ export default function SignIn(){
          <form >
         <input onChange={(e) => setemail(e.target.value)} style={{width:"400px", fontSize:"25px"}} type = "text"  placeholder='userId' value={email}/> <br/>
         <input onChange={(e) => setpass(e.target.value)} style={{width:"400px", fontSize:"25px"}} type ="password" placeholder="password" value={pass} /> <br></br>
-        <button onClick={handlesignin} style={{width:"400px", fontSize:"25px" , backgroundColor:"#0095F6", color:"white", border:"none", padding:"5px 0", borderRadius:"10px"}}>Sign In</button> 
+        <button onClick={handlesignin} style={{width:"400px", fontSize:"25px" , backgroundColor:"#0095F6", color:"white", border:"none", padding:"5px 0", borderRadius:"10px"}}>Sign Up</button> 
         </form>
       </div>
        <hr style={{width:"450px", marginTop:"70px"}}></hr>
