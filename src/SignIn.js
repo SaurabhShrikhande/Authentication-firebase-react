@@ -15,8 +15,9 @@ export default function SignIn(){
           setemail("");
           setpass("");
         })
-        .catch(() => {
-        //  alert("Error...!")
+        .catch((err) => {
+        alert(`Error...! ${err.message}` )
+        console.log(err);
         })
          
        
