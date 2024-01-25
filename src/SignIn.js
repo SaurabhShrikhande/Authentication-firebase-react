@@ -8,7 +8,8 @@ export default function SignIn(){
       const [email , setemail] = useState("");
       const [pass , setpass] = useState("");
 
-      function handlesignin(){
+      function handlesignin(e){
+        e.preventDefault();
         createUserWithEmailAndPassword(auth, email, pass)
         .then( () => {
           alert("Sign In Sussesfuly completed")
