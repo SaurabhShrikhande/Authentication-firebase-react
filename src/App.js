@@ -5,19 +5,22 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { Auth } from './auth';
+import firebase from './firebase';
+import { useState } from 'react';
+
+
 
 function App() {
  const router = createBrowserRouter([
   {
     path : "/",
     element : <LogIn/> ,
-    children  :  [
-      
-   ]
-  }
-   ,
-   {
+    children  :  [ 
+  
+    ]
+
+  },
+  {
     path : "/SignIn",
   element : <SignIn/>
   }
@@ -26,9 +29,9 @@ function App() {
 
   return (
     <div>
-       {/* < RouterProvider router = {router}/> */}
+       < RouterProvider router = {router}/>
 
-       <Auth/>
+       {/* <Auth/> */}
     </div>
   );
 }
